@@ -7,10 +7,20 @@
     <title>Calculator</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <div id="calculator">
+        <header>
+          <i class="fas fa-calculator"></i>
+          <h1>Calculator</h1>
+        </header>
         <div id="input">
           <input type="text" />
         </div>
@@ -19,35 +29,40 @@
             <button class="btn-empty" disabled></button>
             <button class="btn-empty" disabled></button>
             <button class="btn-operator">C</button>
-            <button class="btn-operator">/</button>
+            <button class="btn-operator"><i class="fas fa-divide"></i></button>
           </div>
           <div class="row" id="row4">
             <button class="btn-number" value="7">7</button>
             <button class="btn-number" value="8">8</button>
             <button class="btn-number" value="9">9</button>
-            <button class="btn-operator">*</button>
+            <button class="btn-operator"><i class="fas fa-times"></i></button>
           </div>
           <div class="row" id="row3">
             <button class="btn-number" value="4">4</button>
             <button class="btn-number" value="5">5</button>
             <button class="btn-number" value="6">6</button>
-            <button class="btn-operator">-</button>
+            <button class="btn-operator"><i class="fas fa-minus"></i></button>
           </div>
           <div class="row" id="row2">
             <button class="btn-number" value="1">1</button>
             <button class="btn-number" value="2">2</button>
             <button class="btn-number" value="3">3</button>
-            <button class="btn-operator">+</button>
+            <button class="btn-operator"><i class="fas fa-plus"></i></button>
           </div>
           <div class="row" id="row1">
             <button class="btn-empty" disabled></button>
             <button class="btn-number" value="0">0</button>
             <button class="btn-empty" disabled></button>
-            <button class="btn-operator">=</button>
+            <button class="btn-operator"><i class="fas fa-equals"></i></button>
           </div>
         </div>
       </div>
     </div>
+
+    <script
+      src="https://kit.fontawesome.com/01d2899e28.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
