@@ -32,20 +32,16 @@
             </td>
             <td>
               <button class="btn-operator">
-                <i
-                  class="fas fa-backspace"
-                  id="backspace"
-                  onclick="clearScreen()"
-                ></i>
+                <i class="fas fa-backspace" id="backspace" onclick="back()"></i>
               </button>
             </td>
             <td>
-              <button class="btn-operator" onclick="insert('÷')">
+              <button class="btn-operator" onclick="insert('/')">
                 <i class="fas fa-divide"></i>
               </button>
             </td>
             <td>
-              <button class="btn-operator" onclick="insert('×')">
+              <button class="btn-operator" onclick="insert('*')">
                 <i class="fas fa-times"></i>
               </button>
             </td>
@@ -61,7 +57,7 @@
               <button class="btn-number" onclick="insert('9')">9</button>
             </td>
             <td>
-              <button class="btn-operator" onclick="insert('−')">
+              <button class="btn-operator" onclick="insert('-')">
                 <i class="fas fa-minus"></i>
               </button>
             </td>
@@ -93,7 +89,7 @@
               <button class="btn-number" onclick="insert('3')">3</button>
             </td>
             <td rowspan="2">
-              <button class="btn-operator" onclick="insert('=')">
+              <button class="btn-operator" onclick="calculate('')">
                 <i class="fas fa-equals"></i>
               </button>
             </td>
