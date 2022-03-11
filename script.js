@@ -1,17 +1,16 @@
+let screenResult = document.getElementById('result')
+
 function insert(key) {
-  document.getElementById('result').innerHTML += key
+  screenResult.innerHTML += key
 }
 
 function clearScreen() {
-  document.getElementById('result').innerHTML = ''
+  screenResult.innerHTML = ''
 }
 
 function back() {
-  let result = document.getElementById('result').innerHTML
-  document.getElementById('result').innerHTML = result.substring(
-    0,
-    result.length - 1
-  )
+  let result = screenResult.innerHTML
+  screenResult.innerHTML = result.substring(0, result.length - 1)
   /* 
   O método substring seleciona uma parte/pedaço da string, sendo que:
     - o primeiro parâmetro é em qual índice deseja começar a "pegar"
@@ -40,11 +39,11 @@ function back() {
 }
 
 function calculate() {
-  let result = document.getElementById('result').innerHTML
+  let result = screenResult.innerHTML
   if (result) {
-    document.getElementById('result').innerHTML = eval(result)
+    screenResult.innerHTML = eval(result)
     // a função "eval" é poderosa/perigosa e faz todo o cálculo automaticamente (!!! cuidado ao usar, deve-se pesquisar !!!)
   } else {
-    document.getElementById('result').innerHTML = 'Insira...'
+    screenResult.innerHTML = 'Insira...'
   }
 }
